@@ -13,6 +13,7 @@ $(document).ready(function(){;
     /* google maps */
 google.maps.visualRefresh = true;
 
+var maps = [];
 
 function initializeAllMaps()
 {
@@ -41,7 +42,7 @@ function initialize(id,address) {
                 map: map,
                 title:address
             });
-
+            maps.add(map);
           } else {
           	alert("No results found");
           }
