@@ -31,20 +31,23 @@ var app = angular.module('myApp',  ['ngRoute', 'ngAnimate']);
 
     // create the controller and inject Angular's $scope
     app.controller('mainController', function($scope) {
-        // create a message to display in our view
-        $scope.message = 'Everyone come and see how good I look!';
+        $scope.initialize = function(){
+            alert('dsadsa');
+/* end google maps */}; 
+$scope.initialize();
     });
 
     app.controller('aboutController', function($scope) {
-        $scope.message = 'Look! I am an about page.';
+$scope.initialize = function(){
+            alert('dsadsa');
+/* end google maps */}; 
+$scope.initialize();
     });
 
     app.controller('contactController', function($scope) {
-        $scope.message = 'Contact us! JK. This is just a demo.';
     });
 
     app.controller('offerController', function($scope) {
-        $scope.message = 'Contact us! JK. This is just a demo.';
     });
 
 
