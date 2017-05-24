@@ -40,7 +40,7 @@ google.maps.visualRefresh = true;
 
 $scope.maps = [];
 
-function initializeAllMaps($scope)
+function initializeAllMaps()
 {
         initialize('map-canvas1','ul. Waryńskiego 9, Warszawa')
         initialize('map-canvas2','ul. Puławska 103, Warszawa,')
@@ -75,7 +75,7 @@ function initialize(id,address) {
       });
 	}
 }
-initializeAllMaps($scope);
+       google.maps.event.addDomListener(window, 'load', $scope.initializeAllMaps;   
 
 /* end google maps *//* end google maps */}; 
 $scope.initialize();
