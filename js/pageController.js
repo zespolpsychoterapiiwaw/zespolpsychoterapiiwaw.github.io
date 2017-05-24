@@ -35,7 +35,6 @@ var app = angular.module('myApp',  ['ngRoute', 'ngAnimate']);
 
     app.controller('aboutController', function($scope) {
 $scope.initialize = function(){
-
     /* google maps */
 google.maps.visualRefresh = true;
 
@@ -69,14 +68,14 @@ function initialize(id,address) {
                 title:address
             });
             maps.push(map);
-          } else {
+          } else {  
           	alert("No results found");
           }
         }
       });
 	}
 }
-google.maps.event.addDomListener(window, 'load', initializeAllMaps);
+initializeAllMaps();
 
 /* end google maps *//* end google maps */}; 
 $scope.initialize();
