@@ -75,7 +75,7 @@ function initialize(id,address) {
       });
 	}
 }
-       google.maps.event.addDomListener(window, 'load', $scope.initializeAllMaps;   
+       google.maps.event.addDomListener(window, 'load', $scope.initializeAllMaps);   
 
 /* end google maps *//* end google maps */}; 
 $scope.initialize();
