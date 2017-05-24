@@ -38,10 +38,14 @@ $scope.initialize = function(){
     /* google maps */
 google.maps.visualRefresh = true;
 
-var maps = [];
+$scope.maps = [];
 
 function initializeAllMaps()
 {
+    if($scope.maps.length ==3)
+    {
+        return;
+    }
     initialize('map-canvas1','ul. Waryńskiego 9, Warszawa')
     initialize('map-canvas2','ul. Puławska 103, Warszawa,')
     initialize('map-canvas3','ul. Jasna 1, Warszawa,')
@@ -67,7 +71,7 @@ function initialize(id,address) {
                 map: map,
                 title:address
             });
-            maps.push(map);
+            $scope.maps.push(map);
           } else {  
           	alert("No results found");
           }
