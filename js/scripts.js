@@ -13,7 +13,6 @@ $(document).ready(function(){;
     /* google maps */
 google.maps.visualRefresh = true;
 
-var map;
 
 function initializeAllMaps()
 {
@@ -29,7 +28,7 @@ function initialize(id,address) {
     	mapTypeId: google.maps.MapTypeId.ROADMAP,
      	scrollwheel: false
 	};
-	map = new google.maps.Map(document.getElementById(id),mapOptions);
+	var map = new google.maps.Map(document.getElementById(id),mapOptions);
 
   	if (geocoder) {
       geocoder.geocode( { 'address': address}, function(results, status) {
