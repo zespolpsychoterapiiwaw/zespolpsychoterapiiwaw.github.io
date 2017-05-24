@@ -18,8 +18,8 @@ var map;
 function initializeAllMaps()
 {
     initialize('map-canvas1','ul. Waryńskiego 9, Warszawa')
-    //initialize('map-canvas2','ul. Puławska 103, Warszawa,')
-    //initialize('map-canvas3','ul. Jasna 1, Warszawa,')
+    initialize('map-canvas2','ul. Puławska 103, Warszawa,')
+    initialize('map-canvas3','ul. Jasna 1, Warszawa,')
 }
 
 function initialize(id,address) {
