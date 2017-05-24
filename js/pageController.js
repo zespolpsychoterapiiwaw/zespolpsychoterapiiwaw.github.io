@@ -6,7 +6,7 @@ var app = angular.module('myApp',  ['ngRoute', 'ngAnimate']);
 
             // route for the home page
             .when('/', {
-                templateUrl : 'pages/welcome.html',
+                templateUrl : 'pages/about.html',
                 controller  : 'aboutController'
             })
 
@@ -23,9 +23,9 @@ var app = angular.module('myApp',  ['ngRoute', 'ngAnimate']);
             })
 
             // route for the contact page
-            .when('/contact', {
-                templateUrl : 'pages/contact.html',
-                controller  : 'contactController'
+            .when('/psychotherapy', {
+                templateUrl : 'pages/psychotherapy.html',
+                controller  : 'psychotherapyController'
             });
     });
 
@@ -85,7 +85,7 @@ initializeAllMaps();
 $scope.initialize();
     });
 
-    app.controller('contactController', function($scope) {
+    app.controller('psychotherapyController', function($scope) {
     });
 
     app.controller('offerController', function($scope) {
