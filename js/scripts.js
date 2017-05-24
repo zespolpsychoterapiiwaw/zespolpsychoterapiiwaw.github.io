@@ -42,7 +42,7 @@ function initialize(id,address) {
                 map: map,
                 title:address
             });
-            maps.add(map);
+            maps.push(map);
           } else {
           	alert("No results found");
           }
