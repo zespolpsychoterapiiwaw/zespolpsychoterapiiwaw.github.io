@@ -40,7 +40,7 @@ google.maps.visualRefresh = true;
 
 $scope.maps = [];
 
-function initializeAllMaps()
+function initializeAllMaps($scope)
 {
     if($('#map-canvas1').attr("data-val-loaded") == undefined)
     {
@@ -79,7 +79,7 @@ function initialize(id,address) {
       });
 	}
 }
-initializeAllMaps();
+initializeAllMaps($scope);
 
 /* end google maps *//* end google maps */}; 
 $scope.initialize();
