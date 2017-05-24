@@ -75,10 +75,11 @@ function initialize(id,address) {
       });
 	}
 }
-       google.maps.event.addDomListener(window, 'load', $scope.initializeAllMaps);   
-
+initializeAllMaps();
 /* end google maps *//* end google maps */}; 
-$scope.initialize();
+
+       google.maps.event.addDomListener(window, 'load', $scope.initialize);   
+
     });
 
     app.controller('psychotherapyController', function($scope) {
