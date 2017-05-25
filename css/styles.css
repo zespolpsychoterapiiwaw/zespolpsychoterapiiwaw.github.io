@@ -26,7 +26,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #111111;
+  color: #ddd;
 }
 .row {
   margin-left: 0px;
@@ -114,7 +114,7 @@ body {
   opacity: 0;
 }
 .ch-img-1 {
-  background-color: #acb7b1;
+  background-color: #414141;
 }
 #text {
   z-index: 100;
@@ -169,7 +169,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 .ch-info p a:hover {
-  color: #acb7b1;
+  color: #414141;
 }
 #wrap {
   min-height: 100%;
@@ -206,6 +206,7 @@ h1 {
   font-size: 50px;
   text-align: center;
   font-family: 'Lato';
+  color: #000000;
   font-variant: small-caps;
 }
 h4 {
@@ -230,7 +231,7 @@ p {
   margin: 1px 1px;
 }
 .navbar-custom {
-  background-color: #e3e0cf;
+  background-color: #414141;
   font-weight: 700;
   text-transform: uppercase;
   border-width: 0;
@@ -239,10 +240,10 @@ p {
   width: 400px;
 }
 .navbar-custom .navbar-nav > li > a {
-  color: #75747f;
+  color: #ddd;
 }
 .navbar-custom .navbar-nav li > a:hover {
-  background-color: #c6d6cf;
+  background-color: #000000;
 }
 .navbar-collapse.in {
   overflow-y: visible;
@@ -272,8 +273,9 @@ p {
 #row3 {
   text-align: center;
 }
-.adress {
-  border: 5px double #27252e;
+.address {
+  border: 5px dotted #ddd;
+  color: #fff;
   display: inline-block;
   padding: 12px;
 }
@@ -316,8 +318,9 @@ p {
 }
 .psy-name {
   font-weight: bold;
-  color: #4d4f4e;
-  background: linear-gradient(to right, #e3e0cf, transparent);
+  font-size: 20px;
+  color: #fff;
+  background: linear-gradient(to right, #414141, transparent);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 section {
@@ -329,7 +332,7 @@ section {
 #box {
   margin: 40px;
   border: 10px solid #FFFFFF;
-  background: linear-gradient(180deg, #c6d6cf, #acb7b1);
+  background: linear-gradient(180deg, #000000, #414141);
   opacity: 0.7;
 }
 @media (min-width: 767px) {

@@ -1,11 +1,14 @@
-@menu_link_color: #75747f;
-@menu_hover_button_color: #c6d6cf;
-@navbar_background_color: #e3e0cf;
-@adress_color: #27252e;
-@background_color_1: #acb7b1;
+@menu_link_color: #ddd;
+@menu_hover_button_color: #000000;
+@navbar_background_color: #414141;
+@adress_color: #fff;
+@psy_name_color: #fff;
+@background_color_1: #414141;
 @gradient: linear-gradient(180deg,  @menu_hover_button_color,@background_color_1);
 
-@font_color: #111111;
+@font_color: #ddd;
+@h1_color: #000000;
+
 @font_family_1: 'Lato', sans-serif;
 @font_family_2: 'Lato';
 
@@ -221,6 +224,7 @@ h1 {
 	font-size: 50px;
 	text-align: center;
 	font-family: @font_family_2;
+	color: @h1_color;
 	font-variant: small-caps;
 }
 h4 {
@@ -293,8 +297,9 @@ p {
 #row3 {
 	text-align: center;
 }
-.adress {
-	border: 5px double @adress_color;
+.address {
+	border: 5px dotted #ddd;
+	color: @adress_color;
 	display: inline-block;
 	padding: 12px;
 }
@@ -336,12 +341,10 @@ p {
 	padding: 15px;
 }
 
-.address{
-}
-
 .psy-name {
 	font-weight: bold;
-	color: #4d4f4e;
+	font-size: 20px;
+	color: @psy_name_color;
 	background: linear-gradient(to right,  @navbar_background_color, transparent); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
