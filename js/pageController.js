@@ -120,7 +120,7 @@ app.directive('mapCanvas', function ($timeout) {
             var geocoder = new google.maps.Geocoder();
 
             var mapOptions = {
-                zoom: 15,
+                zoom: 14,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
                 scrollwheel: false
             };
@@ -135,7 +135,7 @@ app.directive('mapCanvas', function ($timeout) {
 
             map.mapTypes.set('usroadatlas', usRoadMapType);
             map.setMapTypeId('usroadatlas');
-                        
+
             if (geocoder) {
                 geocoder.geocode({ 'address': scope.address }, function (results, status) {
                     if (status == google.maps.GeocoderStatus.OK) {
