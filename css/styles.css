@@ -26,7 +26,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #ddd;
+  color: #040404;
 }
 .row {
   margin-left: 0px;
@@ -114,7 +114,7 @@ body {
   opacity: 0;
 }
 .ch-img-1 {
-  background-color: #414141;
+  background-color: #ddd;
 }
 #text {
   z-index: 100;
@@ -169,7 +169,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 .ch-info p a:hover {
-  color: #414141;
+  color: #ddd;
 }
 #wrap {
   min-height: 100%;
@@ -274,8 +274,8 @@ p {
   text-align: center;
 }
 .address {
-  border: 5px dotted #ddd;
-  color: #fff;
+  border: 2px dotted #101010;
+  color: #000000;
   display: inline-block;
   padding: 12px;
 }
@@ -332,7 +332,7 @@ section {
 #box {
   margin: 40px;
   border: 10px solid #FFFFFF;
-  background: linear-gradient(180deg, #000000, #414141);
+  background: linear-gradient(180deg, #ddd, #ffffff);
   opacity: 0.7;
 }
 @media (min-width: 767px) {
