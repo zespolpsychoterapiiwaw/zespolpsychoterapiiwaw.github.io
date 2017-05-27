@@ -3,11 +3,12 @@
 @navbar_background_color: #414141;
 @adress_color: #000000;
 @psy_name_color: #fff;
-@background_color_1: #ddd;
-@gradient: linear-gradient(180deg,  @background_color_1 , #ffffff);
+@psy-bg-color: #3B59bb;
+@background_color_1: #DFE3EE;
+@gradient: linear-gradient(180deg,  #ffffff , #ffffff);
 
 @font_color: #040404;
-@h1_color: #000000;
+@h1_color: #3b5998;
 
 @font_family_1: 'Lato', sans-serif;
 @font_family_2: 'Lato';
@@ -32,6 +33,7 @@ html {
 	background-attachment: fixed;
 }
 body {
+	background-color: @background_color_1;
 	height: 100%;
 	-webkit-font-smoothing: antialiased;
 	font-family: @font_family_1;
@@ -227,6 +229,7 @@ h1 {
 	border-bottom: 1px solid #000000;
 	color: @h1_color;
 	font-variant: small-caps;
+	text-shadow: 1px 1px black;
 }
 h4 {
 	font-variant: small-caps;
@@ -337,15 +340,24 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
+	margin-top: 20px;
 	height: 200px;
 	padding: 15px;
 }
 
 .psy-name {
+	padding:0 4px;
 	font-weight: bold;
 	font-size: 20px;
-	color: @psy_name_color;
-	background: linear-gradient(to right,  @navbar_background_color, transparent); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color:  #365899;
+;
+	//background: linear-gradient(to right,  @psy-bg-color, transparent); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.mg-top-20{
+	margin-top: 40px;
+}
+
+.psy-about {
 }
 
 section {

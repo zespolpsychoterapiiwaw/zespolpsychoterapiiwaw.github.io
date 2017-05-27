@@ -18,6 +18,7 @@ html {
   background-attachment: fixed;
 }
 body {
+  background-color: #DFE3EE;
   height: 100%;
   -webkit-font-smoothing: antialiased;
   font-family: 'Lato', sans-serif;
@@ -109,7 +110,7 @@ body {
   opacity: 0;
 }
 .ch-img-1 {
-  background-color: #ddd;
+  background-color: #DFE3EE;
 }
 #text {
   z-index: 100;
@@ -164,7 +165,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 .ch-info p a:hover {
-  color: #ddd;
+  color: #DFE3EE;
 }
 #wrap {
   min-height: 100%;
@@ -202,8 +203,9 @@ h1 {
   text-align: center;
   font-family: 'Lato';
   border-bottom: 1px solid #000000;
-  color: #000000;
+  color: #3b5998;
   font-variant: small-caps;
+  text-shadow: 1px 1px black;
 }
 h4 {
   font-variant: small-caps;
@@ -308,15 +310,18 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
+  margin-top: 20px;
   height: 200px;
   padding: 15px;
 }
 .psy-name {
+  padding: 0 4px;
   font-weight: bold;
   font-size: 20px;
-  color: #fff;
-  background: linear-gradient(to right, #414141, transparent);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #365899;
+}
+.mg-top-20 {
+  margin-top: 40px;
 }
 section {
   min-height: 200px;
@@ -327,7 +332,7 @@ section {
 #box {
   margin: 40px;
   border: 10px solid #FFFFFF;
-  background: linear-gradient(180deg, #ddd, #ffffff);
+  background: linear-gradient(180deg, #ffffff, #ffffff);
   opacity: 0.7;
 }
 @media (min-width: 767px) {
