@@ -3,15 +3,17 @@
 @navbar_background_color: #414141;
 @adress_color: #000000;
 @psy_name_color: #fff;
-@psy-bg-color: #3B59bb;
-@background_color_1: #DFE3EE;
+@psy-bg-color: #6666ff;
+@background_color_1: #ffffff;
 @gradient: linear-gradient(180deg,  #ffffff , #ffffff);
 
-@font_color: #040404;
-@h1_color: #3b5998;
+@font_color: #000000;
+@h1_color: #8080ff;
 
 @font_family_1: 'Lato', sans-serif;
 @font_family_2: 'Lato';
+@font_family_blockquote: 'Times New Roman', Georgia, Serif;
+
 
 @import "https://fonts.googleapis.com/css?family=Open+Sans:400,700,600";
 /*GRID*/
@@ -42,7 +44,7 @@ body {
     //     -moz-background-size: cover;
     //     -o-background-size: cover;
     //     background-size: cover;
-			color: @font_color;
+	color: @font_color;
 }
 .row {
 	margin-left: 0px;
@@ -50,6 +52,13 @@ body {
 	margin: 10px;
 	min-height: 450px;
 }
+
+.line-image
+{
+	background-image: url("../img/hooper-door-sm.jpg");
+	height: 200px;
+}
+
 .view-animate-container {
 	position: relative;
 }
@@ -130,8 +139,88 @@ body {
 	}
 }
 .ch-img-1 {
-	background-color: @background_color_1;
-}
+    background-image: linear-gradient(bottom, 
+            rgba(77,20,140,1) 0%,
+            rgba(77,20,140,1) 18%,
+            rgba(27,119,205,1) 18%,
+            rgba(27,119,205,1) 33%,
+            rgba(54,160,48,1) 33%,
+            rgba(54,160,48,1) 50%,
+            rgba(255,210,0,1) 50%,
+            rgba(255,210,0,1) 66%,
+            rgba(255,160,0,1) 66%,
+            rgba(255,160,0,1) 83%,
+            rgba(207,15,15,1) 83%,
+            rgba(207,15,15,1) 100%);
+    background-image: -o-linear-gradient(bottom,
+            rgba(77,20,140,1) 0%,
+            rgba(77,20,140,1) 18%,
+            rgba(27,119,205,1) 18%,
+            rgba(27,119,205,1) 33%,
+            rgba(54,160,48,1) 33%,
+            rgba(54,160,48,1) 50%,
+            rgba(255,210,0,1) 50%,
+            rgba(255,210,0,1) 66%,
+            rgba(255,160,0,1) 66%,
+            rgba(255,160,0,1) 83%,
+            rgba(207,15,15,1) 83%,
+            rgba(207,15,15,1) 100%);
+    background-image: -moz-linear-gradient(bottom,
+            rgba(77,20,140,1) 0%,
+            rgba(77,20,140,1) 18%,
+            rgba(27,119,205,1) 18%,
+            rgba(27,119,205,1) 33%,
+            rgba(54,160,48,1) 33%,
+            rgba(54,160,48,1) 50%,
+            rgba(255,210,0,1) 50%,
+            rgba(255,210,0,1) 66%,
+            rgba(255,160,0,1) 66%,
+            rgba(255,160,0,1) 83%,
+            rgba(207,15,15,1) 83%,
+            rgba(207,15,15,1) 100%);
+    background-image: -webkit-linear-gradient(bottom, 
+            rgba(77,20,140,1) 0%,
+            rgba(77,20,140,1) 18%,
+            rgba(27,119,205,1) 18%,
+            rgba(27,119,205,1) 33%,
+            rgba(54,160,48,1) 33%,
+            rgba(54,160,48,1) 50%,
+            rgba(255,210,0,1) 50%,
+            rgba(255,210,0,1) 66%,
+            rgba(255,160,0,1) 66%,
+            rgba(255,160,0,1) 83%,
+            rgba(207,15,15,1) 83%,
+            rgba(207,15,15,1) 100%);
+    background-image: -ms-linear-gradient(bottom, 
+            rgba(77,20,140,1) 0%,
+            rgba(77,20,140,1) 18%,
+            rgba(27,119,205,1) 18%,
+            rgba(27,119,205,1) 33%,
+            rgba(54,160,48,1) 33%,
+            rgba(54,160,48,1) 50%,
+            rgba(255,210,0,1) 50%,
+            rgba(255,210,0,1) 66%,
+            rgba(255,160,0,1) 66%,
+            rgba(255,160,0,1) 83%,
+            rgba(207,15,15,1) 83%,
+            rgba(207,15,15,1) 100%);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.00,rgba(77,20,140,1)),
+    color-stop(0.18,rgba(77,20,140,1)),
+    color-stop(0.18,rgba(27,119,205,1)),
+    color-stop(0.33,rgba(27,119,205,1)),
+    color-stop(0.33,rgba(54,160,48,1)),
+    color-stop(0.50,rgba(54,160,48,1)),
+    color-stop(0.50,rgba(255,210,0,1)),
+    color-stop(0.66,rgba(255,210,0,1)),
+    color-stop(0.66,rgba(255,160,0,1)),
+    color-stop(0.83,rgba(255,160,0,1)),
+    color-stop(0.83,rgba(207,15,15,1)),
+    color-stop(1.00,rgba(207,15,15,1))
+);}
 #text {
 	z-index: 100;
 	position: absolute;
@@ -236,12 +325,19 @@ h4 {
 }
 p {
 	font-size: larger;
+	text-align: justify;
 }
 #nav {
 	width: 100%;
 	position: static;
 	top: -32px;
 	margin-bottom: 40px;
+}
+blockquote{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-family: @font_family_blockquote;
+	
 }
 #nav.affix {
 	position: fixed;
@@ -368,9 +464,11 @@ section {
 }
 
 #box{
-margin: 40px;
+margin-top: 10px;
+margin-left: 40px;
+margin-right: 40px;
 border: 10px solid #FFFFFF;
-background: @gradient;
+background-color: #ffffff;
 opacity: 0.7;
 }
 

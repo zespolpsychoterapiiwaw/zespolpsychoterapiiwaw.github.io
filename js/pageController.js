@@ -6,8 +6,8 @@ app.config(function ($routeProvider) {
 
         // route for the home page
         .when('/', {
-            templateUrl: 'pages/about.html',
-            controller: 'aboutController'
+            templateUrl: 'pages/psychotherapy.html',
+            controller: 'psychotherapyController'
         })
 
         .when('/offer', {

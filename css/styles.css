@@ -18,17 +18,21 @@ html {
   background-attachment: fixed;
 }
 body {
-  background-color: #DFE3EE;
+  background-color: #ffffff;
   height: 100%;
   -webkit-font-smoothing: antialiased;
   font-family: 'Lato', sans-serif;
-  color: #040404;
+  color: #000000;
 }
 .row {
   margin-left: 0px;
   margin-right: 0px;
   margin: 10px;
   min-height: 450px;
+}
+.line-image {
+  background-image: url("../img/hooper-door-sm.jpg");
+  height: 200px;
 }
 .view-animate-container {
   position: relative;
@@ -110,7 +114,12 @@ body {
   opacity: 0;
 }
 .ch-img-1 {
-  background-color: #DFE3EE;
+  background-image: linear-gradient(bottom, #4d148c 0%, #4d148c 18%, #1b77cd 18%, #1b77cd 33%, #36a030 33%, #36a030 50%, #ffd200 50%, #ffd200 66%, #ffa000 66%, #ffa000 83%, #cf0f0f 83%, #cf0f0f 100%);
+  background-image: -o-linear-gradient(bottom, #4d148c 0%, #4d148c 18%, #1b77cd 18%, #1b77cd 33%, #36a030 33%, #36a030 50%, #ffd200 50%, #ffd200 66%, #ffa000 66%, #ffa000 83%, #cf0f0f 83%, #cf0f0f 100%);
+  background-image: -moz-linear-gradient(bottom, #4d148c 0%, #4d148c 18%, #1b77cd 18%, #1b77cd 33%, #36a030 33%, #36a030 50%, #ffd200 50%, #ffd200 66%, #ffa000 66%, #ffa000 83%, #cf0f0f 83%, #cf0f0f 100%);
+  background-image: -webkit-linear-gradient(bottom, #4d148c 0%, #4d148c 18%, #1b77cd 18%, #1b77cd 33%, #36a030 33%, #36a030 50%, #ffd200 50%, #ffd200 66%, #ffa000 66%, #ffa000 83%, #cf0f0f 83%, #cf0f0f 100%);
+  background-image: -ms-linear-gradient(bottom, #4d148c 0%, #4d148c 18%, #1b77cd 18%, #1b77cd 33%, #36a030 33%, #36a030 50%, #ffd200 50%, #ffd200 66%, #ffa000 66%, #ffa000 83%, #cf0f0f 83%, #cf0f0f 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #4d148c), color-stop(0.18, #4d148c), color-stop(0.18, #1b77cd), color-stop(0.33, #1b77cd), color-stop(0.33, #36a030), color-stop(0.5, #36a030), color-stop(0.5, #ffd200), color-stop(0.66, #ffd200), color-stop(0.66, #ffa000), color-stop(0.83, #ffa000), color-stop(0.83, #cf0f0f), color-stop(1, #cf0f0f));
 }
 #text {
   z-index: 100;
@@ -165,7 +174,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 .ch-info p a:hover {
-  color: #DFE3EE;
+  color: #ffffff;
 }
 #wrap {
   min-height: 100%;
@@ -203,7 +212,7 @@ h1 {
   text-align: center;
   font-family: 'Lato';
   border-bottom: 1px solid #000000;
-  color: #3b5998;
+  color: #8080ff;
   font-variant: small-caps;
   text-shadow: 1px 1px black;
 }
@@ -212,12 +221,18 @@ h4 {
 }
 p {
   font-size: larger;
+  text-align: justify;
 }
 #nav {
   width: 100%;
   position: static;
   top: -32px;
   margin-bottom: 40px;
+}
+blockquote {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: 'Times New Roman', Georgia, Serif;
 }
 #nav.affix {
   position: fixed;
@@ -330,9 +345,11 @@ section {
   padding-top: 100px;
 }
 #box {
-  margin: 40px;
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
   border: 10px solid #FFFFFF;
-  background: linear-gradient(180deg, #ffffff, #ffffff);
+  background-color: #ffffff;
   opacity: 0.7;
 }
 @media (min-width: 767px) {
