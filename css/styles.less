@@ -55,8 +55,13 @@ body {
 
 .line-image
 {
-	background-image: url("../img/hooper-door-sm.jpg");
-	height: 200px;
+	display: block;
+    margin: 0 auto;
+	//position: absolute;
+	width: 80%;
+    height: auto;
+	//height: auto;
+
 }
 
 .view-animate-container {
@@ -320,6 +325,11 @@ h1 {
 	font-variant: small-caps;
 	text-shadow: 1px 1px black;
 }
+.page-title{
+	border-bottom: 1px dotted #000000;
+width: 100%;
+display: block;
+}
 h4 {
 	font-variant: small-caps;
 }
@@ -334,9 +344,13 @@ p {
 	margin-bottom: 40px;
 }
 blockquote{
-	margin-top: 40px;
-	margin-bottom: 40px;
+  	  font-style: italic;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	max-width: 40%;
+  border-left: 3px solid @h1_color;
 	font-family: @font_family_blockquote;
+	float:left;
 	
 }
 #nav.affix {
@@ -469,7 +483,6 @@ margin-left: 40px;
 margin-right: 40px;
 border: 10px solid #FFFFFF;
 background-color: #ffffff;
-opacity: 0.7;
 }
 
 @media (min-width: 767px) {
@@ -478,6 +491,21 @@ opacity: 0.7;
 			float: none;
 		}
 	}
+}
+@media (max-width: 767px) {
+	.navbar-nav.nav-justified {
+		>li {
+			float: none;
+		}
+	}
+	#box{
+margin-top: 10px;
+border: 10px solid #FFFFFF;
+background-color: #ffffff;
+margin-left: 0px;
+margin-right: 0px;
+
+}
 }
 @media (max-height: 763px) {
 	section {
