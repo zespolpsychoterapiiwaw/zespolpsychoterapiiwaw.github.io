@@ -348,8 +348,8 @@ blockquote {
   font-size: 20px;
   color: #365899;
 }
-.mg-top-20 {
-  margin-top: 40px;
+.mg-bottom-40 {
+  margin-bottom: 40px;
 }
 section {
   min-height: 200px;

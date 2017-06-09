@@ -33,13 +33,42 @@ app.config(function ($routeProvider) {
 app.controller('mainController', function ($scope) {
 });
 
-app.controller('aboutController', function ($scope) {
+app.controller('aboutController', function ($scope, $sce) {
+    $scope.renderHtml = function(html_code)
+{
+    return $sce.trustAsHtml(html_code);
+};
+
+    var jsonPath = "data/pl/team.json";
+    if($scope.language === 'en'){
+        jsonPath = "data/en/team.json";
+    }
+    $.getJSON(jsonPath, function(json) {
+        $scope.team = json.team;
+    })    
 });
 
 app.controller('psychotherapyController', function ($scope) {
+    var jsonPath = "data/pl/psychotherapy.json";
+    if($scope.language === 'en'){
+        jsonPath = "data/en/psychotherapy.json";
+    }
+    $.getJSON(jsonPath, function(json) {
+        article = json;
+        $scope.article = article;
+    })    
 });
 
 app.controller('offerController', function ($scope) {
+    var jsonPath = "data/pl/offer.json";
+    if($scope.language === 'en'){
+        jsonPath = "data/en/offer.json";
+    }
+    $.getJSON(jsonPath, function(json) {
+        article = json;
+        $scope.article = article;
+    })
+
 });
 
 app.directive('mapCanvas', function ($timeout) {
@@ -63,10 +92,6 @@ app.directive('mapCanvas', function ($timeout) {
                 scrollwheel: false
             };
             var map = new google.maps.Map(document.getElementById(scope.selectormap), mapOptions);
-
-
-
-
             if (geocoder) {
                 geocoder.geocode({ 'address': scope.address }, function (results, status) {
                     if (status == google.maps.GeocoderStatus.OK) {

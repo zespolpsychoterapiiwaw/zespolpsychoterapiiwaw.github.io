@@ -1,58 +1,22 @@
 <div class="row" id="row1" >
   <div class="col-sm-10 col-sm-offset-1">
-    <!--<h1>Informacje</h1>-->
-    <row> 
-      <div class="col-md-6">
-        <div class="psy-name">Agnieszka Abugaber</div>
-        <p class="psy-about">
-          Psychoterapeutka psychoanalityczna, członek nadzwyczajny w Polskim Towarzystwie Psychoterapii Psychoanalitycznej, związana
-          ze Specjalistyczną Poradnią przy PTPP. Wcześniej kształciła się w Polsce i w USA. Ukończyła Nowojorski Instytut
-          Gestalt-u, jest członkinią AAGT. Posiada dyplom szkoły psychoterapii INTRA, rekomendowanej przez Polskie Towarzystwo
-          Psychologiczne. Prowadzi terapię dorosłych, młodzieży i dzieci. Pracuje w języku polskim i angielskim.
-        </p>
-              <map-canvas address="ul. Puławska 103, Warszawa" selectormap="map-canvas2"></map-canvas>
-          <div class="col-md-6 address">
-            <p><u>Adres</u></p> 
-            ul. Puławska 103 m 2</br>          
-            Warszawa </br>
-            <b><i class="fa fa-mobile"></i> 601 322 116</b>                            
+<div ng-repeat="member in team">
+      <div class="col-md-6 mg-bottom-40">
+        <div class="psy-name">{{member.name}}</div>
+        <p class="psy-about">{{member.about}}</p>
+              <map-canvas ng-if="member.has_map" address="{{member.map_address}}" selectormap="{{member.map_selector}}"></map-canvas>
+          <div class="{{member.address_class}}">
+            <p><u>{{member.address_title}}</u></p> 
+            <div ng-repeat="line in member.address_lines">
+              <b>{{line.title}}</b> {{line.line}}</br>  
+            </div>        
+            <b><i class="fa fa-mobile"></i> {{member.tel}}</b>                            
         </div>
       </div>
-            <div class="col-md-6">
-        <div class="psy-name">Jan Borowicz</div>
-        <p class="psy-about">
-          Psycholog, psychoterapeuta psychoanalityczny, członek nadzwyczajny Polskiego Towarzystwa Psychoterapii Psychoanalitycznej.
-          Ukończył czteroletnie Studium Psychoterapii Analitycznej, afiliowane przez PTPP. Doświadczenie zdobywał w Szpitalu
-          Nowowiejskim w Warszawie i w Szpitalu Tworkowskim w Pruszkowie. Pracuje z dorosłymi i młodymi dorosłymi, także
-          w języku angielskim. Pracuje naukowo w Instytucie Kultury Polskiej na Uniwersytecie Warszawskim.
-        </p>
-              <map-canvas address="ul. Waryńskiego 9, Warszawa" selectormap="map-canvas1"></map-canvas>
-          <div class="col-md-6 address">
-            <p><u>Adres</u></p> 
-            ul. Waryńskiego 9 m 125</br>          
-            Warszawa </br>
-            <b><i class="fa fa-mobile"></i> 504 188 633</b>                          
-        </div>
-      </div>
-    </row>
-    <row>
-      <div class="col-md-6 mg-top-20">
-        <div class="psy-name">Ewa Filipek</div>
-        <p class="psy-about">
-          Psycholog, certyfikowana psychoterapeutka psychoanalityczna PTPP. Członek zwyczajny PTPP. Ukończyła z wyróżnieniem specjalizację
-          psychoterapeutyczną na Uniwersytecie Warszawskim. Jest absolwentką Instytutu Psychoanalizy i Psychoterapii. Doświadczenie
-          zdobywała w Szpitalu Nowowiejskim oraz Centrum Psychoterapii przy ul. Dolnej w Warszawie. Prowadzi psychoterapię
-          psychoanalityczną dorosłych i młodych dorosłych.
-        </p>
-               <map-canvas address="ul. Jasna 1, Warszawa" selectormap="map-canvas3"></map-canvas>
+  </div>
 
-          <div class="col-md-6 address">
-            <p><u>Adres</u></p> 
-            ul. Jasna 1 lokal 410</br>          
-            Warszawa </br>
-            <b><i class="fa fa-mobile"></i> 601 010 642</b>                            
-        </div>        
-      </div>
+      <!--
+      
       <div class="col-md-6 mg-top-20">
 
         <div class="psy-name">Joanna Wesołowska</div>
@@ -70,10 +34,8 @@
  Warszawa </br>
             <b><i class="fa fa-mobile"></i> 733 626 777</b>                            
         </div>          
-      </div>
-    </row>
+      </div>-->
+
   </div>
-  <!--/col-->
 </div>
 
-<!--/container-->
