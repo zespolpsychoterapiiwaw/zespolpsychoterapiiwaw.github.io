@@ -30,41 +30,61 @@ app.config(function ($routeProvider) {
 });
 
 // create the controller and inject Angular's $scope
-app.controller('mainController', function ($scope) {
+app.controller('mainController', function ($scope, $timeout, $route) {
+    $scope.data = {};
+    $scope.data.language = 'pl'
+
+    $scope.changeLanguage = function () {
+        if ($scope.data.language == 'pl') {
+            $scope.data.language = 'en';
+        }
+        else {
+            $scope.data.language = 'pl';
+        }
+    }
+    $scope.reload = function () {
+        var commonPath = "data/pl/common.json";
+        if ($scope.data.language === 'en')
+            commonPath = "data/en/common.json";
+        $.getJSON(commonPath, function (json) {
+            $scope.common = json;
+        })
+        $route.reload();
+    };
+
+    $scope.reload();
 });
 
 app.controller('aboutController', function ($scope, $sce) {
-    $scope.renderHtml = function(html_code)
-{
-    return $sce.trustAsHtml(html_code);
-};
-
+    $scope.renderHtml = function (html_code) {
+        return $sce.trustAsHtml(html_code);
+    };
     var jsonPath = "data/pl/team.json";
-    if($scope.language === 'en'){
+    if ($scope.$parent.data.language === 'en') {
         jsonPath = "data/en/team.json";
     }
-    $.getJSON(jsonPath, function(json) {
+    $.getJSON(jsonPath, function (json) {
         $scope.team = json.team;
-    })    
+    })
 });
 
 app.controller('psychotherapyController', function ($scope) {
     var jsonPath = "data/pl/psychotherapy.json";
-    if($scope.language === 'en'){
+    if ($scope.$parent.data.language === 'en') {
         jsonPath = "data/en/psychotherapy.json";
     }
-    $.getJSON(jsonPath, function(json) {
+    $.getJSON(jsonPath, function (json) {
         article = json;
         $scope.article = article;
-    })    
+    })
 });
 
 app.controller('offerController', function ($scope) {
     var jsonPath = "data/pl/offer.json";
-    if($scope.language === 'en'){
+    if ($scope.$parent.data.language === 'en') {
         jsonPath = "data/en/offer.json";
     }
-    $.getJSON(jsonPath, function(json) {
+    $.getJSON(jsonPath, function (json) {
         article = json;
         $scope.article = article;
     })
@@ -82,34 +102,34 @@ app.directive('mapCanvas', function ($timeout) {
         },
         link: function (scope, element) {
             $timeout(function () {
-    //DOM has finished rendering
+                //DOM has finished rendering
 
-            var geocoder = new google.maps.Geocoder();
+                var geocoder = new google.maps.Geocoder();
 
-            var mapOptions = {
-                zoom: 14,
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                scrollwheel: false
-            };
-            var map = new google.maps.Map(document.getElementById(scope.selectormap), mapOptions);
-            if (geocoder) {
-                geocoder.geocode({ 'address': scope.address }, function (results, status) {
-                    if (status == google.maps.GeocoderStatus.OK) {
-                        if (status != google.maps.GeocoderStatus.ZERO_RESULTS) {
-                            map.setCenter(results[0].geometry.location);
+                var mapOptions = {
+                    zoom: 14,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    scrollwheel: false
+                };
+                var map = new google.maps.Map(document.getElementById(scope.selectormap), mapOptions);
+                if (geocoder) {
+                    geocoder.geocode({ 'address': scope.address }, function (results, status) {
+                        if (status == google.maps.GeocoderStatus.OK) {
+                            if (status != google.maps.GeocoderStatus.ZERO_RESULTS) {
+                                map.setCenter(results[0].geometry.location);
 
-                            var marker = new google.maps.Marker({
-                                position: results[0].geometry.location,
-                                map: map,
-                                title: scope.address
-                            });
-                        } else {
-                            alert("No results found");
+                                var marker = new google.maps.Marker({
+                                    position: results[0].geometry.location,
+                                    map: map,
+                                    title: scope.address
+                                });
+                            } else {
+                                alert("No results found");
+                            }
                         }
-                    }
-                });
-            }
-        });
+                    });
+                }
+            });
         }
     };
 });
