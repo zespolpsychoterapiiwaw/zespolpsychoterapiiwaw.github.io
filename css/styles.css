@@ -214,7 +214,7 @@ h1 {
   text-align: center;
   font-family: 'Lato';
   border-bottom: 1px solid #000000;
-  color: #8080ff;
+  color: #275599;
   font-variant: small-caps;
   text-shadow: 1px 1px black;
 }
@@ -243,7 +243,7 @@ blockquote {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 20px;
-  border-left: 3px solid #8080ff;
+  border-left: 3px solid #275599;
   font-family: 'Times New Roman', Georgia, Serif;
   float: left;
 }

@@ -9,7 +9,7 @@
                 "address_title" : "Adres",
                 "address_lines" : 
                 [
-                    {"line":"ul. Puławska 103 m 2"},
+                    {"line":"ul. Puławska 103 m. 2"},
                     {"line":"Warszawa"}
                 ],
                 "tel" : "601 322 116",
@@ -24,7 +24,7 @@
                 "address_title" : "Adres",
                 "address_lines" : [
                     
-                    {"line":"ul. Waryńskiego 9 m 125"},
+                    {"line":"ul. Waryńskiego 9 m. 125"},
                     {"line":"Warszawa"}
                 ],
                 "tel" : "504 188 633",
@@ -52,7 +52,7 @@
                 "address_title" : "Adresy",
                 "address_lines" : 
                 [
-                    {"title":"Centrum Terapii Indygo,", "line":"ul. Mikołajczyka 1 lok 12"},
+                    {"title":"Centrum Terapii Indygo,", "line":"ul. Mikołajczyka 1 lok. 12"},
                     {"title":"Centrum Terapii Promitis,", "line":"ul. Garibaldiego 4 lok. 2p"},
                     {"title":"Instytut konsultacyjno terapeutyczny Inversa,", "line":"ul.Bukowińska 26b"},
                     {"line":"Warszawa"}
