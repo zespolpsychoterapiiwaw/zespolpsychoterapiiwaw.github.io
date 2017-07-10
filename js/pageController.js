@@ -29,16 +29,18 @@ app.config(function ($routeProvider) {
         });
 });
 
-app.factory('dataService', function($q, $timeout) {
-  return {
-    myMethod: function(name, language) {
-    var jsonPath = "data/pl/"+name+".json";
-    if (language === 'en') {
-        jsonPath = "data/en/"+name+".json";
-    }
-    return $.getJSON(jsonPath);
-    }
-  };
+app.factory('dataService', function ($q, $timeout) {
+    return {
+
+        myMethod: function (name, language) {
+            var jsonPath = "data/pl/" + name + ".json";
+            if (language === 'en') {
+                jsonPath = "data/en/" + name + ".json";
+            }
+            return $.getJSON(jsonPath);
+
+        }
+    };
 });
 
 // create the controller and inject Angular's $scope
@@ -60,8 +62,8 @@ app.controller('mainController', function ($scope, $timeout, $route) {
             commonPath = "data/en/common.json";
         $.getJSON(commonPath, function (json) {
             $scope.common = json;
+            $route.reload();
         })
-        $route.reload();
     };
 
     $scope.reload();
@@ -71,21 +73,23 @@ app.controller('aboutController', function ($scope, $sce, dataService) {
     $scope.renderHtml = function (html_code) {
         return $sce.trustAsHtml(html_code);
     };
-      dataService.myMethod('team', $scope.$parent.data.language).then(function(resp) {
+    dataService.myMethod('team', $scope.$parent.data.language).then(function (resp) {
         $scope.team = resp.team;
-      })    
+    })
 });
 
 app.controller('psychotherapyController', function ($scope, dataService) {
-      dataService.myMethod('psychotherapy', $scope.$parent.data.language).then(function(resp) {
+    dataService.myMethod('psychotherapy', $scope.$parent.data.language).then(function (resp) {
+        console.log("Response:");
+        console.log(resp);
         $scope.article = resp;
-      })    
+    })
 });
 
-app.controller('offerController', function ($scope,dataService) {
-      dataService.myMethod('offer', $scope.$parent.data.language).then(function(resp) {
+app.controller('offerController', function ($scope, dataService) {
+    dataService.myMethod('offer', $scope.$parent.data.language).then(function (resp) {
         $scope.article = resp;
-      })
+    })
 });
 
 app.directive('mapCanvas', function ($timeout) {
