@@ -75,6 +75,8 @@ app.controller('aboutController', function ($scope, $sce, dataService) {
     };
     dataService.myMethod('team', $scope.$parent.data.language).then(function (resp) {
         $scope.team = resp.team;
+        $scope.$apply();
+        
     })
 });
 
@@ -83,12 +85,14 @@ app.controller('psychotherapyController', function ($scope, dataService) {
         console.log("Response:");
         console.log(resp);
         $scope.article = resp;
+        $scope.$apply();
     })
 });
 
 app.controller('offerController', function ($scope, dataService) {
     dataService.myMethod('offer', $scope.$parent.data.language).then(function (resp) {
         $scope.article = resp;
+        $scope.$apply();        
     })
 });
 
