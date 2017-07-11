@@ -398,3 +398,11 @@ section {
     padding-top: 100px;
   }
 }
+.mansonry.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mansonry.display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
