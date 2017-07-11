@@ -221,7 +221,7 @@ header .dropdown-menu {
 h1 {
   font-size: 50px;
   text-align: center;
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   border-bottom: 1px solid #000000;
   color: #275599;
   font-variant: small-caps;
