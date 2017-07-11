@@ -1,22 +1,22 @@
-<div class="row" id="row1" >
+<div class="row" id="row1">
   <div class="col-sm-10 col-sm-offset-1 mansonry display-flex">
-<div ng-repeat="member in team" class="col-md-6 mg-bottom-40 item">
-        <div class="psy-name">{{member.name}}</div>
-        <p class="psy-about">{{member.about}}</p>
-              <map-canvas ng-if="member.has_map" address="{{member.map_address}}" selectormap="{{member.map_selector}}"></map-canvas>
-          <div class="{{member.address_class}}">
-            <p><u>{{member.address_title}}</u></p> 
-            <div ng-repeat="line in member.address_lines">
-              <b>{{line.title}}</b> {{line.line}}</br>  
-            </div>        
-            <b><i class="fa fa-mobile"></i> {{member.tel}}</b>                            
+    <div ng-repeat="member in team" class="col-md-6 mg-bottom-40 item">
+      <div class="psy-name">{{member.name}}</div>
+      <p class="psy-about">{{member.about}}</p>
+      <map-canvas ng-if="member.has_map" address="{{member.map_address}}" selectormap="{{member.map_selector}}" class="col-md-6"></map-canvas>
+      <div class="{{member.address_class}}">
+        <p>
+          <u>{{member.address_title}}</u>
+        </p>
+        <div ng-repeat="line in member.address_lines">
+          <b>{{line.title}}</b> {{line.line}}</br>
         </div>
-  </div>
+        <b><i class="fa fa-mobile"></i> {{member.tel}}</b>
+      </div>
+    </div>
   </div>
 </div>
 
 <!--
   <button class="btn" ng-click="$parent.changeLanguage(); $parent.reload()">{{$parent.data.language}} {{$parent.common.about_text}}</button>
   -->
-
-

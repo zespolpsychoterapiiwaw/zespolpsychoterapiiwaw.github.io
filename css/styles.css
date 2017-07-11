@@ -1,5 +1,4 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,latin-ext";
-@import "https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext";
 /*GRID*/
 /*GRID*/
 /* END OF CIRCLE*/
@@ -12,6 +11,13 @@
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 /* customize nav style */
 /** animated boxes **/
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.eot');
+  src: url('../fonts/Lato-Regular.woff') format('woff'), url('../fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   height: 100%;
   -webkit-font-smoothing: antialiased;
@@ -401,8 +407,4 @@ section {
 .mansonry.display-flex {
   display: flex;
   flex-wrap: wrap;
-}
-.mansonry.display-flex > [class*='col-'] {
-  display: flex;
-  flex-direction: column;
 }
