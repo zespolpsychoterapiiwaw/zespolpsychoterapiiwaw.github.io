@@ -30,7 +30,17 @@
 
 <body>
      <div ng-app="myApp" ng-controller="mainController">
-  <!-- Wrap all page content here -->
+
+  <div class="header-row">
+    <div class="col-sm-4">
+      <img src="img/logo.png" class="line-image">
+    </div>
+    <div class="col-sm-8">
+      <img src="img/hooper-door-sm.jpg" class="line-image only-desktop">
+    </div>
+  </div>
+
+    <!-- Wrap all page content here -->
   <div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav">
     <div class="container">
       <div class="navbar-header">
@@ -41,25 +51,20 @@
             </button>
       </div>
       <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav nav-justified">
+        <ul class="nav navbar-nav">
           <li><a href="#psychotherapy">{{common.about_text}}</a></li>
           <li><a href="#offer">{{common.help_text}}</a></li>
           <li><a href="#about">{{common.team_text}}</a></li>
-
+          <li><a href="#about">{{common.contact_text}}</a></li>          
+        </ul>
+        <ul class="nav navbar-nav nav-lang">
+          <li><img src="img/eng.png"></li>
         </ul>
       </div>
-      <!--/.nav-collapse -->
     </div>
-    <!--/.container -->
-  </div>
-  
+  </div> 
 
   <!--/.navbar -->
-  <div class="page-header text-center">
-    <h1>{{common.title_text}}</h1>
-  </div>
-
-  <img src="img/hooper-door-sm-2.png" class="line-image">
 
   <div id="box">
     <div id="wrap">

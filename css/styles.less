@@ -18,9 +18,6 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,latin-ext";//
 //@import "https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext";
 
-/*GRID*/
-/*GRID*/
-/* END OF CIRCLE*/
 /* Wrapper for page content to push down footer */
 /* Set the fixed height of the footer here */
 /* Custom page CSS
@@ -68,13 +65,16 @@ body {
 	min-height: 450px;
 }
 
+.header-row {
+	margin: 0px;
+}
+
 .line-image
 {
 	display: block;
     margin: 0 auto;
 	//position: absolute;
-	width: 80%;
-    height: auto;
+    height: 40vh;
 	//height: auto;
 
 }
@@ -356,7 +356,7 @@ p {
 	width: 100%;
 	position: static;
 	top: -32px;
-	margin-bottom: 40px;
+	overflow: hidden;
 }
 blockquote{
 	font-size: larger;
@@ -376,8 +376,18 @@ blockquote{
 	width: 100%;
 	z-index: 10;
 }
+
+.right-li{
+	float: right;
+}
 .navbar-nav {
 	margin: 1px 1px;
+}
+.nav-lang{
+	float: right;
+}
+.nav-lang>li>img {
+  height: 50px;
 }
 .navbar-custom {
 	background-color:@navbar_background_color;
@@ -386,7 +396,7 @@ blockquote{
 	border-width: 0;
 	.navbar-nav {
 		>li {
-			width: 400px;
+			width: auto;
 			>a {
 				color: @menu_link_color;
 			}
@@ -404,6 +414,8 @@ blockquote{
 	overflow-y: visible;
 }
 .navbar-toggle {
+	float: left;
+	margin-left: 15px;
 	outline: 0;
 }
 .divider {
@@ -515,6 +527,18 @@ background-color: #ffffff;
 			float: none;
 		}
 	}
+
+	.only-desktop{
+		display: none;
+	}
+
+	.nav-lang{
+		float: none;
+	}	
+	.nav-lang>li>img {
+  height: 30px;
+  margin-left: 15px;
+}
 	#box{
 margin-top: 10px;
 border: 10px solid #FFFFFF;

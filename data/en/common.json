@@ -2,5 +2,7 @@
         "title_text" : "Team",
         "about_text" : "About psychotherapy",
         "help_text": "How can we help",
-        "team_text" : "Team"
+        "team_text" : "Team",
+        "contact_text" : "Contact",
+        "change_language_text" : "Polish"        
     }
