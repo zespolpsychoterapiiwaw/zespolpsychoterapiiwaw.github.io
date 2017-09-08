@@ -50,6 +50,12 @@ body {
   margin: 0 auto;
   height: 40vh;
 }
+.right-line-image {
+  width: 100%;
+}
+.left-line-image {
+  transform: scale(0.9, 0.9);
+}
 .view-animate-container {
   position: relative;
 }
