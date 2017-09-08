@@ -45,6 +45,9 @@ body {
 .header-row {
   margin: 0px;
 }
+img.desaturate {
+  transform: scale(0.3, 0.3);
+}
 .line-image {
   display: block;
   margin: 0 auto;
