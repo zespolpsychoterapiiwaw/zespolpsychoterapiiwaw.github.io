@@ -21,12 +21,18 @@ app.config(function ($routeProvider) {
             templateUrl: 'pages/about.html',
             controller: 'aboutController'
         })
-
         // route for the contact page
+        .when('/contact', {
+            templateUrl: 'pages/contact.html',
+            controller: 'contactController'
+            
+        })
+
         .when('/psychotherapy', {
             templateUrl: 'pages/psychotherapy.html',
             controller: 'psychotherapyController'
         });
+        
 });
 
 app.factory('dataService', function ($q, $timeout) {
@@ -78,6 +84,18 @@ app.controller('aboutController', function ($scope, $sce, dataService) {
         
     })
 });
+
+app.controller('contactController', function ($scope, $sce, dataService) {
+    $scope.renderHtml = function (html_code) {
+        return $sce.trustAsHtml(html_code);
+    };
+    dataService.getData('team', $scope.$parent.data.language).then(function (resp) {
+        $scope.team = resp.team;
+        $scope.$apply();
+        
+    })
+});
+
 
 app.controller('psychotherapyController', function ($scope, dataService) {
     dataService.getData('psychotherapy', $scope.$parent.data.language).then(function (resp) {
