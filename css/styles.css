@@ -45,8 +45,16 @@ body {
 .header-row {
   margin: 0px;
 }
-img.desaturate {
-  transform: scale(0.3, 0.3);
+img.flag {
+  transform: scale(0.35, 0.35);
+}
+.li-flag {
+  filter: grayscale(50%);
+  cursor: pointer;
+}
+.li-flag:hover {
+  background-color: #000000;
+  filter: none;
 }
 .line-image {
   display: block;

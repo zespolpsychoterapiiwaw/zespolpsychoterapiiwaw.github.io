@@ -31,8 +31,7 @@ app.config(function ($routeProvider) {
 
 app.factory('dataService', function ($q, $timeout) {
     return {
-
-        myMethod: function (name, language) {
+        getData: function (name, language) {
             var jsonPath = "data/pl/" + name + ".json";
             if (language === 'en') {
                 jsonPath = "data/en/" + name + ".json";
@@ -73,7 +72,7 @@ app.controller('aboutController', function ($scope, $sce, dataService) {
     $scope.renderHtml = function (html_code) {
         return $sce.trustAsHtml(html_code);
     };
-    dataService.myMethod('team', $scope.$parent.data.language).then(function (resp) {
+    dataService.getData('team', $scope.$parent.data.language).then(function (resp) {
         $scope.team = resp.team;
         $scope.$apply();
         
@@ -81,7 +80,7 @@ app.controller('aboutController', function ($scope, $sce, dataService) {
 });
 
 app.controller('psychotherapyController', function ($scope, dataService) {
-    dataService.myMethod('psychotherapy', $scope.$parent.data.language).then(function (resp) {
+    dataService.getData('psychotherapy', $scope.$parent.data.language).then(function (resp) {
         console.log("Response:");
         console.log(resp);
         $scope.article = resp;
@@ -90,7 +89,7 @@ app.controller('psychotherapyController', function ($scope, dataService) {
 });
 
 app.controller('offerController', function ($scope, dataService) {
-    dataService.myMethod('offer', $scope.$parent.data.language).then(function (resp) {
+    dataService.getData('offer', $scope.$parent.data.language).then(function (resp) {
         $scope.article = resp;
         $scope.$apply();        
     })

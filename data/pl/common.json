@@ -4,5 +4,7 @@
         "help_text": "Jak pomagamy",
         "team_text" : "Zespół",
         "contact_text" : "Kontakt",
-        "change_language_text" : "English"                
+        "change_language_text" : "English",   
+        "flag_src": "img/us_flag.png"
+                   
     }

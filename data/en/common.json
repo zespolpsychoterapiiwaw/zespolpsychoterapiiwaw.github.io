@@ -4,5 +4,6 @@
         "help_text": "How can we help",
         "team_text" : "Team",
         "contact_text" : "Contact",
-        "change_language_text" : "Polish"        
+        "change_language_text" : "Polish",        
+        "flag_src": "img/pl_flag.png"
     }
