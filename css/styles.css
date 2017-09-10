@@ -241,12 +241,8 @@ img.flag {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
+.nav-wrapper {
+  text-align: center;
 }
 .container .credit {
   margin: 20px 0;
@@ -271,6 +267,7 @@ h1 {
   display: block;
 }
 h4 {
+  margin-top: 20px;
   font-variant: small-caps;
 }
 p {

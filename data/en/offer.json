@@ -1,8 +1,13 @@
     {
-        "title" : "How can we help",
+        "title" : "How we help",
         "quote": "Głęboki proces wymaga stałych i bezpiecznych ram: psychoterapia odbywa się o stałych godzinach i w stałym miejscu, zwykl z częstotliwością od dwóch do czterech razy w tygodniu.",
-        "p1":"Zanim rozpocznie się psychoterapia, potrzeba trzech – czterech spotkań konsultacyjnych, których celem jest rozmowa o kłopotach i sposobie pomocy.",
-        "p2":"Psychoanaliza opiera się na założeniu, że ludzie często motywowani są nierozpoznanymi schematami i pragnieniami, których korzenie tkwią w nieświadomości. W ich odkryciu może pomóc badanie relacji między pacjentem a terapeutą.",
-        "p3":"W czasie sesji pacjent może mówić o sobie, swoim życiu, wszystkim, co mu przychodzi do głowy, włączając w narrację także swoje marzenia i sny. Terapeuta odnosząc się do sposobów wchodzenia pacjenta w związki z innymi ludźmi, może zaproponować perspektywę widzenia, niedostępną zwykle dla przyjaciół i bliskich. Odkrywanie sposobów wchodzenia w relację z terapeutą pozwala pacjentowi lepiej zrozumieć inne ważne dla siebie związki z najważniejszymi osobami z przeszłości (rodzicami, rodzeństwem, opiekunami).",
-        "p4":"Głęboki proces wymaga stałych i bezpiecznych ram: psychoterapia odbywa się o stałych godzinach i w stałym miejscu, zwykle z częstotliwością od dwóch do czterech razy w tygodniu. Częstotliwość sesji służy pogłębieniu przebiegu terapii. Odpowiednia liczba spotkań ustalana jest między terapeutą a pacjentem. Na początku terapii nie ustala się terminu jej zakończenia. Terapia trwa do momentu, gdy zarówno terapeuta, jak i pacjent uznają jej zakończenie za możliwe i wskazane. Zarówno konsultacja, jak i sesja psychoterapeutyczna trwa 50 minut."
+        "h1":"Initial consultations",
+        "h1p1":"We begin the process with two or three initial consultation meetings during which we discuss the patient’s problems and how we can address them. Each consultation lasts 50 minutes.",
+        "h2":"The Psychoanalytical Process",
+        "h2p1":"Psychoanalysis is based on the assumption that people are often motivated by unknown schemas and desires whose origins lie in the unconscious. Discovering these hidden drives can help resolve the patient’s problems. The psychotherapist’s role is to aid the patient in this process, in particular by analyzing the relationship between the patient and the psychoanalyst herself.",
+        "h2p2":"During the sessions the patient can talk about herself, her life, or really anything which comes to mind, including her hopes and dreams. The therapist can suggest a new way of looking at things different from that of the patient’s relatives or friends. Discovering ways of forming a relationship with the therapist allows the patient to better understand other important relationships in her life, both past (those with her parents, siblings, caregivers) and present (friends, life partners). ",
+        "h3":"Frequency",
+        "h3p1":"Psychoanalysis is a deep process which requires stable and secure frames. Psychotherapy takes place at fixed times and at the same place, usually two to four times per week. The frequency of the sessions helps to deepen the course of therapy. The number of sessions per week is agreed to by the therapist and the patient. Sessions last 50 minutes. ",
+        "h4":"Termination",
+        "h4p1":"Therapy lasts until both the therapist and the patient agree that its termination is possible and necessary. As such, neither the duration of the therapy nor its termination date can be set at the beginning."
     }

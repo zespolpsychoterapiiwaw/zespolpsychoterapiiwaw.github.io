@@ -6,7 +6,7 @@
 <div class ="col-sm-3 pull-right" style="word-wrap: break-word">
     <img src="img/new_yoker.jpg"  style=" min-width:50px; text-align: center;display: block; width: 100%; margin-bottom: 20px"></img>
 </div>
-    <p>{{article.p1}}
+    <p ng-bind-html="renderHtml(article.p1)"></p>
       <div class="col-sm-3">
 
         <blockquote  ng-cloak>
@@ -19,7 +19,6 @@
       </iframe>
 
       <p>{{article.p4}}</p>
-      <p>{{article.p5}}</p>
         </div>
   </div>
 </div>

@@ -97,7 +97,14 @@ app.controller('contactController', function ($scope, $sce, dataService) {
 });
 
 
-app.controller('psychotherapyController', function ($scope, dataService) {
+app.controller('psychotherapyController', function ($scope, $sce, dataService) {
+    $scope.renderHtml = function (html_code) {
+        return $sce.trustAsHtml(html_code);
+        
+        $scope.trust = $sce.trustAsHtml;
+
+    };
+
     dataService.getData('psychotherapy', $scope.$parent.data.language).then(function (resp) {
         console.log("Response:");
         console.log(resp);
