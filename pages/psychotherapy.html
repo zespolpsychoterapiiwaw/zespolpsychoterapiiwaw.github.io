@@ -1,16 +1,16 @@
 <div class="row">
   <div class="col-sm-10 col-sm-offset-1">
     <h3 class="page-title">{{article.title}}</h3>
-      <div class="row">
+    <div class="row">
 
-<div class ="col-sm-3 pull-right" style="word-wrap: break-word">
-    <img src="img/new_yoker.jpg"  style=" min-width:50px; text-align: center;display: block; width: 100%; margin-bottom: 20px"></img>
-</div>
-    <p ng-bind-html="renderHtml(article.p1)"></p>
+      <div class="col-sm-3 pull-right" style="word-wrap: break-word">
+        <img src="img/new_yoker.jpg" style=" min-width:50px; text-align: center;display: block; width: 100%; margin-bottom: 20px"></img>
+      </div>
+      <p ng-bind-html="renderHtml(article.p1)"></p>
       <div class="col-sm-3">
 
-        <blockquote  ng-cloak>
-           {{article.quote}}
+        <blockquote ng-cloak>
+          {{article.quote}}
         </blockquote>
       </div>
       <p>{{article.p2}} </p>
@@ -19,6 +19,6 @@
       </iframe>
 
       <p>{{article.p4}}</p>
-        </div>
+    </div>
   </div>
 </div>

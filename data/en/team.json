@@ -1,65 +1,40 @@
     {
-        "team" : 
-        [
+        "team": [
             {
-                "name" : "Agnieszka Abugaber",
-                "about" : "Psychoterapeutka psychoanalityczna, członek nadzwyczajny w Polskim Towarzystwie Psychoterapii Psychoanalitycznej, związana ze Specjalistyczną Poradnią przy PTPP. Wcześniej kształciła się w Polsce i w USA. Ukończyła Nowojorski Instytut Gestalt-u, jest członkinią AAGT. Posiada dyplom szkoły psychoterapii INTRA, rekomendowanej przez Polskie Towarzystwo Psychologiczne. Prowadzi terapię dorosłych, młodzieży i dzieci. Pracuje w języku polskim i angielskim.",
-                "map_address" : "ul. Puławska 103, Warszawa",
-                "map_selector" : "map-canvas1",
-                "address_title" : "Adres",
-                "address_lines" : 
-                [
-                    {"line":"ul. Puławska 103 m. 2"},
-                    {"line":"Warszawa"}
+                "name": "Agnieszka Abugaber",
+                "about": "Psychoanalytic psychotherapist, member of the Polish Association for Psychoanalytic Psychotherapy (PTPP), staff member at the PTPP’s specialist clinic. Graduate of the Psychoanalytic School for Psychotherapy at PTPP. Graduate of the Children and Adolescents Psychotherapy program (Level 1) in PTPP. Prior training in Poland and in the United States. Studied in the New York Institute for Gestalt Therapy.Graduate of the INTRA Psychotherapy School, recommended by the Polish Psychological Association. Conducts therapy of adult, adolescents and children. Works in Polish and English.",
+                "map_address": "ul. Puławska 103, Warszawa",
+                "map_selector": "map-canvas1",
+                "address_title": "Adress",
+                "address_lines": [
+                    {
+                        "line": "Puławska 103 apt. 2"
+                    },
+                    {
+                        "line": "Warsaw"
+                    }
                 ],
-                "tel" : "601 322 116",
+                "tel": "601 322 116",
                 "address_class": "col-md-6 address",
-                "has_map" : true
+                "has_map": true
             },
             {
-                "name" : "Jan Borowicz",
-                "about" : "Psycholog, psychoterapeuta psychoanalityczny, członek nadzwyczajny Polskiego Towarzystwa Psychoterapii Psychoanalitycznej. Ukończył czteroletnie Studium Psychoterapii Analitycznej, afiliowane przez PTPP. Doświadczenie zdobywał w Szpitalu Nowowiejskim w Warszawie i w Szpitalu Tworkowskim w Pruszkowie. Pracuje z dorosłymi i młodymi dorosłymi, także w języku angielskim. Pracuje naukowo w Instytucie Kultury Polskiej na Uniwersytecie Warszawskim.",
-                "map_address" : "ul. Waryńskiego 9, Warszawa",
-                "map_selector" : "map-canvas2",
-                "address_title" : "Adres",
-                "address_lines" : [
-                    
-                    {"line":"ul. Waryńskiego 9 m. 125"},
-                    {"line":"Warszawa"}
+                "name": "Jan Borowicz",
+                "about": "Psychologist and psychoanalytic psychotherapist, member of the Polish Association of for Psychoanalytic Psychotherapy. He finished 4-year Study of Psychoanalytic Psychotherapy, affiliated with the Polish Association for Psychoanalytic Psychotherapy. He gained clinical experience in Nowowiejska Hospital in Warsaw and Tworki Hospital in Pruszków. He works – both in English and Polish – with adults and young adults. He also teaches and conducts research in Institute of Polish Culture, University of Warsaw.",
+                "map_address": "Waryńskiego 9, Warszawa",
+                "map_selector": "map-canvas2",
+                "address_title": "Adress",
+                "address_lines": [
+                    {
+                        "line": "ul. Waryńskiego 9 m. 125"
+                    },
+                    {
+                        "line": "Warsaw"
+                    }
                 ],
-                "tel" : "504 188 633",
+                "tel": "504 188 633",
                 "address_class": "col-md-6 address",
-                "has_map" : true
-            },
-            {
-                "name" : "Ewa Filipek",
-                "about" : "Psycholog, certyfikowana psychoterapeutka psychoanalityczna PTPP. Członek zwyczajny PTPP. Ukończyła z wyróżnieniem specjalizację psychoterapeutyczną na Uniwersytecie Warszawskim. Jest absolwentką Instytutu Psychoanalizy i Psychoterapii. Doświadczenie zdobywała w Szpitalu Nowowiejskim oraz Centrum Psychoterapii przy ul. Dolnej w Warszawie. Prowadzi psychoterapię psychoanalityczną dorosłych i młodych dorosłych.",
-                "map_address" : "ul. Jasna 1, Warszawa",
-                "map_selector" : "map-canvas3",
-                "address_title" : "Adres",
-                "address_lines" : 
-                [
-                    {"line":"ul. Jasna 1 lokal 410"},
-                    {"line":"Warszawa"}
-                ],
-                "tel" : "601 010 642",
-                "address_class": "col-md-6 address",
-                "has_map" : true
-            },
-            {
-                "name" : "Joanna Wesołowska",
-                "about" : "Lekarz specjalista psychiatra i psychoterapeutka. Absolwentka Uniwersytetu Medycznego w Warszawie. Doświadczenie zawodowe zdobywała w Szpitalu Bielańskim, Instytucie Psychiatrii i Neurologii, Szpitalu Nowowiejskim oraz w trakcie licznych staży specjalizacyjnych. Ukończyła szkolenie w zakresie terapii psychoanalitycznej w Instytucie Analizy Grupowej Rasztów. Prowadzi psychoterapię grupową i psychoterapię indywidualną osób dorosłych.",
-                "address_title" : "Adresy",
-                "address_lines" : 
-                [
-                    {"title":"Centrum Terapii Indygo,", "line":"ul. Mikołajczyka 1 lok. 12"},
-                    {"title":"Centrum Terapii Promitis,", "line":"ul. Garibaldiego 4 lok. 2p"},
-                    {"title":"Instytut konsultacyjno terapeutyczny Inversa,", "line":"ul.Bukowińska 26b"},
-                    {"line":"Warszawa"}
-                ],
-                "tel" : "733 626 777",
-                "address_class": "col-md-12 address",
-                "has_map" : false
-            }                                        
+                "has_map": true
+            }
         ]
     }
