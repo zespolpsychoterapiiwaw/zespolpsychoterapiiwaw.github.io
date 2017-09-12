@@ -54,13 +54,13 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="#psychotherapy">{{common.about_text}}</a></li>
-          <li><a href="#offer">{{common.help_text}}</a></li>
-          <li><a href="#about">{{common.team_text}}</a></li>
-          <li><a href="#contact">{{common.contact_text}}</a></li>          
+          <li><a href="#psychotherapy" data-toggle="collapse" data-target=".navbar-collapse.in">{{common.about_text}}</a></li>
+          <li><a href="#offer" data-toggle="collapse" data-target=".navbar-collapse.in">{{common.help_text}}</a></li>
+          <li><a href="#about" data-toggle="collapse" data-target=".navbar-collapse.in">{{common.team_text}}</a></li>
+          <li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">{{common.contact_text}}</a></li>          
         </ul>
         <ul class="nav navbar-nav nav-lang">
-          <li ng-click="changeLanguage(); reload();" class="li-flag"><img class="flag" ng-src="{{common.flag_src}}" ></li>
+          <li ng-click="changeLanguage(); reload();" class="li-flag" data-toggle="collapse" data-target=".navbar-collapse.in"><img class="flag" ng-src="{{common.flag_src}}" ></li>
         </ul>
       </div>
     </div>
