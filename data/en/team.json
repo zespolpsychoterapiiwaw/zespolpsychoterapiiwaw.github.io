@@ -3,12 +3,12 @@
             {
                 "name": "Agnieszka Abugaber",
                 "about": "Psychoanalytic psychotherapist, member of the Polish Association for Psychoanalytic Psychotherapy (PTPP), staff member at the PTPP’s specialist clinic. Graduate of the Psychoanalytic School for Psychotherapy at PTPP. Graduate of the Children and Adolescents Psychotherapy program (Level 1) in PTPP. Prior training in Poland and in the United States. Studied in the New York Institute for Gestalt Therapy.Graduate of the INTRA Psychotherapy School, recommended by the Polish Psychological Association. Conducts therapy of adult, adolescents and children. Works in Polish and English.",
-                "map_address": "ul. Puławska 103, Warszawa",
+                "map_address": "ul. Kujawska 3, Warszawa",
                 "map_selector": "map-canvas1",
                 "address_title": "Adress",
                 "address_lines": [
                     {
-                        "line": "Puławska 103 apt. 2"
+                        "line": "Kujawska 3 apt. 17"
                     },
                     {
                         "line": "Warsaw"
@@ -26,7 +26,7 @@
                 "address_title": "Adress",
                 "address_lines": [
                     {
-                        "line": "ul. Waryńskiego 9 m. 25a"
+                        "line": "ul. Waryńskiego 9 apt. 25a"
                     },
                     {
                         "line": "Warsaw"
